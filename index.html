@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afjal Ansari | Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        emailjs.init("79XLgDPgTiFuasiRE");
+    </script>
+
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                Afjal<span>.</span>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+
+                <li><a href="#home">Home</a></li>
+
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#skills">Skills</a></li>
+
+                <li><a href="#education">Education</a></li>
+
+                <li><a href="#projects">Projects</a></li>
+
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+            <div class="nav-actions">
+
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle light/dark theme">
+                    <i class="fa-solid fa-sun"></i>
+                </button>
+
+                <button id="hamburger" class="icon-btn hamburger" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+
+        </nav>
+
+        <div class="scroll-progress" id="scrollProgress"></div>
+
+    </header>
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="home">
+
+        <div class="home-text">
+
+            <h3>Hello, I'm</h3>
+
+            <h1>Afjal Ansari</h1>
+
+            <h2>Java Full Stack Developer</h2>
+
+            <p>
+                Passionate Java Developer and DevOps Enthusiast with hands-on
+                experience in Spring Boot, Docker, Kubernetes, Jenkins and AWS.
+            </p>
+
+            <div class="buttons">
+
+                <a href="resume/afjalresue.pdf" download class="btn">
+    <i class="fas fa-download"></i> Download Resume
+</a>
+
+                <a href="#contact" class="btn btn2">
+                    Contact Me
+                </a>
+
+            </div>
+
+            <div class="social">
+
+                <a href="https://github.com/Taskin078" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i> 
+                </a>
+
+                <a href="https://www.linkedin.com/in/afjal-ansari-5164b924a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i> 
+                </a>
+
+                <a href="https://www.instagram.com/afjal_ansari/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i> 
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="home-image">
+
+            <img src="image/portfolio.jpeg" alt="Afjal Ansari">
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <h2 class="heading">About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <img src="image/imagesssss.png" alt="">
+
+            </div>
+
+            <div class="about-text">
+
+                <h3>Java Full Stack Developer</h3>
+
+                <p>
+
+                    I'm Afjal Ansari pursuing B.Tech in Information Technology
+                    (Honours). I enjoy developing scalable web applications
+                    using Java, Spring Boot and modern frontend technologies.
+                    Along with development I am learning DevOps tools like
+                    Docker, Kubernetes, Jenkins, Terraform and AWS.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= STATS ================= -->
+
+    <section id="stats" class="stats">
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+                <h3><span class="counter" data-target="10">0</span>+</h3>
+                <p>Projects Built</p>
+            </div>
+
+            <div class="stat-card">
+                <h3><span class="counter" data-target="14">0</span></h3>
+                <p>Technologies</p>
+            </div>
+
+            <div class="stat-card">
+                <h3><span class="counter" data-target="2">0</span>+</h3>
+                <p>Years Learning</p>
+            </div>
+
+            <div class="stat-card">
+                <h3><span class="counter" data-target="100">0</span>%</h3>
+                <p>Dedication</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills">
+
+        <h2 class="heading">Skills</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card" data-level="90">
+                <div class="skill-top"><span>Java</span><span class="skill-percent">90%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="85">
+                <div class="skill-top"><span>Spring Boot</span><span class="skill-percent">85%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="85">
+                <div class="skill-top"><span>HTML</span><span class="skill-percent">85%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="80">
+                <div class="skill-top"><span>CSS</span><span class="skill-percent">80%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="75">
+                <div class="skill-top"><span>JavaScript</span><span class="skill-percent">75%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="80">
+                <div class="skill-top"><span>MySQL</span><span class="skill-percent">80%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="85">
+                <div class="skill-top"><span>Git</span><span class="skill-percent">85%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="85">
+                <div class="skill-top"><span>GitHub</span><span class="skill-percent">85%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="70">
+                <div class="skill-top"><span>Docker</span><span class="skill-percent">70%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="65">
+                <div class="skill-top"><span>Kubernetes</span><span class="skill-percent">65%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="70">
+                <div class="skill-top"><span>Jenkins</span><span class="skill-percent">70%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="75">
+                <div class="skill-top"><span>Linux</span><span class="skill-percent">75%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="65">
+                <div class="skill-top"><span>AWS</span><span class="skill-percent">65%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+            <div class="skill-card" data-level="60">
+                <div class="skill-top"><span>Terraform</span><span class="skill-percent">60%</span></div>
+                <div class="skill-bar"><div class="skill-fill"></div></div>
+            </div>
+
+        </div>
+
+        <p class="skills-note">* Percentages are self-assessed proficiency levels — feel free to edit them in index.html to match your own.</p>
+
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education">
+
+        <h2 class="heading">Education</h2>
+
+        <div class="education-card">
+
+            <h3>B.Tech Information Technology (Honours)</h3>
+
+            <p>
+
+                Babu Banarasi Das Institute of Technology and Management
+
+            </p>
+
+            <span>2022 - 2026</span>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects">
+
+        <h2 class="heading">Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card"
+                data-title="Government Contract Management"
+                data-desc="A full web application to manage government contracts end to end — creation, approval workflow, vendor records and reporting — built on core Java with Servlets and JSP for the presentation layer and JDBC for persistence."
+                data-tech="Java, Servlet, JSP, JDBC, MySQL"
+                data-github="#"
+                data-live="#">
+
+                <img src="image/gov.png" alt="">
+
+                <h3>Government Contract Management</h3>
+
+                <p>
+
+                    Java, Servlet, JSP, JDBC and MySQL based web application.
+
+                </p>
+
+                <button class="btn btn-details">View Details</button>
+
+            </div>
+
+            <div class="project-card"
+                data-title="E-Notes Application"
+                data-desc="An online notes management system where users can register, log in securely and create, edit, and organize personal notes. Focused on clean authentication flow and simple, distraction-free note editing."
+                data-tech="Java, Spring Boot, MySQL, HTML, CSS"
+                data-github="#"
+                data-live="#">
+
+                <img src="image/eotes.png" alt="">
+
+                <h3>E-Notes Application</h3>
+
+                <p>
+
+                    Online notes management system with login authentication.
+
+                </p>
+
+                <button class="btn btn-details">View Details</button>
+
+            </div>
+
+            <div class="project-card"
+                data-title="Payroll Management System"
+                data-desc="A Java OOP based desktop/web application that automates employee payroll — salary calculation, deductions and payslip generation — designed around clean class structures and reusable business logic."
+                data-tech="Core Java, OOP, MySQL"
+                data-github="#"
+                data-live="#">
+
+                <img src="image/image.png" alt="">
+
+                <h3>Payroll Management System</h3>
+
+                <p>
+
+                    Java OOP based employee payroll application.
+
+                </p>
+
+                <button class="btn btn-details">View Details</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECT MODAL ================= -->
+
+    <div class="modal-overlay" id="modalOverlay">
+
+        <div class="modal-box">
+
+            <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+
+            <h3 id="modalTitle">Project Title</h3>
+
+            <p id="modalDesc">Project description goes here.</p>
+
+            <p class="modal-tech"><strong>Tech Stack:</strong> <span id="modalTech"></span></p>
+
+            <div class="modal-links">
+
+                <a id="modalGithub" href="#" target="_blank" class="btn btn2">
+                    <i class="fab fa-github"></i> Code
+                </a>
+
+                <a id="modalLive" href="#" target="_blank" class="btn">
+                    Live Demo
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <h2 class="heading">Contact Me</h2>
+
+        <form id="contactForm" novalidate>
+
+            <input type="text" id="nameInput" name="name" placeholder="Your Name">
+            <span class="error-msg" id="nameError"></span>
+
+            <input type="email" id="emailInput" name="email" placeholder="Email">
+            <span class="error-msg" id="emailError"></span>
+
+            <input type="text" id="subjectInput" name="subject" placeholder="Subject">
+            <span class="error-msg" id="subjectError"></span>
+
+            <textarea rows="6" id="messageInput" name="message" placeholder="Message"></textarea>
+            <span class="error-msg" id="messageError"></span>
+
+            <button type="submit" class="btn" id="submitBtn">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- ================= TOAST ================= -->
+
+    <div class="toast" id="toast"></div>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+
+            © 2026 Afjal Ansari | Java Full Stack Developer
+
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

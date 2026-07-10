@@ -1,0 +1,1122 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    background:#0f172a;
+    color:white;
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a{
+
+    text-decoration:none;
+    color:white;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/* ===========================
+   COMMON
+=========================== */
+
+section{
+
+    padding:100px 10%;
+
+}
+
+.heading{
+
+    text-align:center;
+    font-size:42px;
+    margin-bottom:60px;
+    color:#38bdf8;
+
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#111827;
+    z-index:999;
+    box-shadow:0 5px 20px rgba(0,0,0,.3);
+
+}
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 10%;
+
+}
+
+.logo{
+
+    font-size:30px;
+    font-weight:700;
+
+}
+
+.logo span{
+
+    color:#38bdf8;
+
+}
+
+.nav-links{
+
+    display:flex;
+    gap:35px;
+
+}
+
+.nav-links li a{
+
+    transition:.3s;
+    font-weight:500;
+
+}
+
+.nav-links li a:hover{
+
+    color:#38bdf8;
+
+}
+
+/* ===========================
+   HOME
+=========================== */
+
+.home{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    min-height:100vh;
+
+}
+
+.home-text{
+
+    flex:1;
+
+}
+
+.home-text h3{
+
+    font-size:25px;
+    color:#38bdf8;
+
+}
+
+.home-text h1{
+
+    font-size:65px;
+    margin:10px 0;
+
+}
+
+.home-text h2{
+
+    font-size:35px;
+    color:#94a3b8;
+    margin-bottom:20px;
+
+}
+
+.home-text p{
+
+    line-height:1.8;
+    color:#cbd5e1;
+    max-width:650px;
+
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.buttons{
+
+    margin-top:40px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#38bdf8;
+
+    color:white;
+
+    border-radius:8px;
+
+    margin-right:20px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+}
+
+.btn:hover{
+
+    background:#0284c7;
+
+    transform:translateY(-5px);
+
+}
+
+.btn2{
+
+    background:transparent;
+
+    border:2px solid #38bdf8;
+
+}
+
+.btn2:hover{
+
+    background:#38bdf8;
+
+}
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
+
+.social{
+
+    margin-top:35px;
+
+}
+
+.social a{
+
+    width:45px;
+
+    height:45px;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#1e293b;
+
+    border-radius:50%;
+
+    margin-right:15px;
+
+    transition:.4s;
+
+    font-size:20px;
+
+}
+
+.social a:hover{
+
+    background:#38bdf8;
+
+    transform:translateY(-8px);
+
+}
+
+/* ===========================
+   HOME IMAGE
+=========================== */
+
+.home-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.home-image img{
+
+    width:370px;
+
+    height:370px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:8px solid #38bdf8;
+
+    box-shadow:0 0 40px rgba(56,189,248,.4);
+
+}
+/* ===========================
+   ABOUT SECTION
+=========================== */
+
+.about-container{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    flex-wrap:wrap;
+
+}
+
+.about-image{
+
+    flex:1;
+    display:flex;
+    justify-content:center;
+
+}
+
+.about-image img{
+
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:20px;
+    border:5px solid #38bdf8;
+    box-shadow:0 0 25px rgba(56,189,248,.3);
+
+}
+
+.about-text{
+
+    flex:1;
+
+}
+
+.about-text h3{
+
+    font-size:35px;
+    margin-bottom:20px;
+    color:#38bdf8;
+
+}
+
+.about-text p{
+
+    color:#cbd5e1;
+    line-height:1.9;
+    font-size:18px;
+
+}
+
+/* ===========================
+   SKILLS SECTION
+=========================== */
+
+.skills-container{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+
+}
+
+.skill-card{
+
+    background:#1e293b;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    font-size:20px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.4s;
+    border:2px solid transparent;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-12px);
+    border:2px solid #38bdf8;
+    background:#0f172a;
+    box-shadow:0 0 20px rgba(56,189,248,.3);
+
+}
+
+/* ===========================
+   EDUCATION SECTION
+=========================== */
+
+.education-card{
+
+    max-width:800px;
+    margin:auto;
+    background:#1e293b;
+    padding:40px;
+    border-radius:20px;
+    text-align:center;
+    transition:.4s;
+
+}
+
+.education-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(56,189,248,.3);
+
+}
+
+.education-card h3{
+
+    font-size:30px;
+    margin-bottom:15px;
+    color:#38bdf8;
+
+}
+
+.education-card p{
+
+    color:#cbd5e1;
+    font-size:18px;
+    margin-bottom:10px;
+
+}
+
+.education-card span{
+
+    color:#94a3b8;
+    font-size:17px;
+
+}
+
+/* ===========================
+   EXPERIENCE (Future Ready)
+=========================== */
+
+.experience{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+
+}
+
+.exp-card{
+
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    transition:.4s;
+
+}
+
+.exp-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(56,189,248,.3);
+
+}
+
+.exp-card h3{
+
+    color:#38bdf8;
+    margin-bottom:10px;
+
+}
+
+.exp-card p{
+
+    color:#cbd5e1;
+    line-height:1.8;
+
+}
+
+/* ===========================
+   SECTION ANIMATION
+=========================== */
+
+section{
+
+    animation:fadeUp .8s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(50px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+/* ===========================
+   PROJECT SECTION
+=========================== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#1e293b;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.4s;
+    box-shadow:0 10px 20px rgba(0,0,0,.3);
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 30px rgba(56,189,248,.3);
+}
+
+.project-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-card h3{
+    color:#38bdf8;
+    padding:20px 20px 10px;
+    font-size:24px;
+}
+
+.project-card p{
+    padding:0 20px 20px;
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+/* ===========================
+   CONTACT SECTION
+=========================== */
+
+form{
+    max-width:750px;
+    margin:auto;
+}
+
+form input,
+form textarea{
+    width:100%;
+    padding:18px;
+    margin-bottom:20px;
+    background:#1e293b;
+    color:white;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:16px;
+}
+
+form textarea{
+    resize:none;
+}
+
+form input:focus,
+form textarea:focus{
+    border:2px solid #38bdf8;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111827;
+    padding:30px;
+    text-align:center;
+    color:#cbd5e1;
+    margin-top:50px;
+}
+
+footer p{
+    font-size:16px;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:20px;
+}
+
+/* ===========================
+   IMAGE HOVER
+=========================== */
+
+img{
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.03);
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+        padding-top:120px;
+    }
+
+    .home-image{
+        margin-bottom:40px;
+    }
+
+    .about-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .nav-links{
+        gap:18px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .logo{
+        font-size:24px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .home-text h1{
+        font-size:42px;
+    }
+
+    .home-text h2{
+        font-size:24px;
+    }
+
+    .heading{
+        font-size:34px;
+    }
+
+    .buttons{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .btn{
+        margin-right:0;
+    }
+
+    .home-image img{
+        width:280px;
+        height:280px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    section{
+        padding:80px 7%;
+    }
+
+    .heading{
+        font-size:28px;
+    }
+
+    .home-text h1{
+        font-size:34px;
+    }
+
+    .home-text h2{
+        font-size:20px;
+    }
+
+    .home-text p{
+        font-size:15px;
+    }
+
+    .skill-card{
+        padding:20px;
+        font-size:17px;
+    }
+
+    .education-card{
+        padding:25px;
+    }
+
+    .project-card h3{
+        font-size:20px;
+    }
+
+}
+
+/* ===========================
+   THEME VARIABLES / LIGHT MODE
+=========================== */
+
+body{
+    --bg:#0f172a;
+    --bg-alt:#1e293b;
+    --text:#ffffff;
+    --text-soft:#cbd5e1;
+    --accent:#38bdf8;
+    transition:background .4s ease, color .4s ease;
+}
+
+body.light-theme{
+    --bg:#f1f5f9;
+    --bg-alt:#ffffff;
+    --text:#0f172a;
+    --text-soft:#334155;
+    --accent:#0284c7;
+}
+
+body,
+header,
+.skill-card,
+.education-card,
+.exp-card,
+.project-card,
+form input,
+form textarea,
+footer,
+.modal-box,
+.stat-card{
+    background:var(--bg);
+    color:var(--text);
+}
+
+header{ background:var(--bg-alt); }
+.skill-card, .education-card, .exp-card, .project-card, form input, form textarea, .modal-box, .stat-card{
+    background:var(--bg-alt);
+}
+footer{ background:var(--bg-alt); }
+
+body{ background:var(--bg); color:var(--text); }
+a{ color:var(--text); }
+.heading{ color:var(--accent); }
+.home-text h3{ color:var(--accent); }
+.home-text h2{ color:var(--text-soft); }
+.home-text p{ color:var(--text-soft); }
+.about-text p, .education-card p, .project-card p, footer p{ color:var(--text-soft); }
+.btn{ background:var(--accent); }
+.btn2{ border-color:var(--accent); }
+.btn2:hover{ background:var(--accent); }
+.logo span{ color:var(--accent); }
+.nav-links li a:hover{ color:var(--accent); }
+
+/* ===========================
+   NAV ACTIONS / THEME TOGGLE / HAMBURGER
+=========================== */
+
+.nav-actions{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.icon-btn{
+    background:transparent;
+    border:2px solid var(--accent);
+    color:var(--text);
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:16px;
+    transition:.3s;
+}
+
+.icon-btn:hover{
+    background:var(--accent);
+    color:#fff;
+}
+
+.hamburger{
+    display:none;
+    flex-direction:column;
+    gap:5px;
+    border:2px solid var(--accent);
+}
+
+.hamburger span{
+    width:20px;
+    height:2px;
+    background:var(--text);
+    transition:.3s;
+}
+
+.hamburger.active span:nth-child(1){
+    transform:translateY(7px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2){
+    opacity:0;
+}
+.hamburger.active span:nth-child(3){
+    transform:translateY(-7px) rotate(-45deg);
+}
+
+/* ===========================
+   SCROLL PROGRESS BAR
+=========================== */
+
+.scroll-progress{
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:3px;
+    width:0%;
+    background:var(--accent);
+    transition:width .1s ease-out;
+}
+
+/* ===========================
+   STATS SECTION
+=========================== */
+
+.stats{
+    padding:60px 10%;
+}
+
+.stats-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+}
+
+.stat-card{
+    text-align:center;
+    padding:35px 20px;
+    border-radius:15px;
+    border:2px solid transparent;
+    transition:.4s;
+}
+
+.stat-card:hover{
+    border-color:var(--accent);
+    transform:translateY(-8px);
+}
+
+.stat-card h3{
+    font-size:42px;
+    color:var(--accent);
+    margin-bottom:8px;
+}
+
+.stat-card p{
+    color:var(--text-soft);
+    font-size:16px;
+    font-weight:500;
+}
+
+/* ===========================
+   SKILL BARS
+=========================== */
+
+.skill-card{
+    text-align:left;
+    cursor:default;
+}
+
+.skill-top{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:12px;
+    font-size:17px;
+}
+
+.skill-percent{
+    color:var(--accent);
+}
+
+.skill-bar{
+    width:100%;
+    height:10px;
+    background:rgba(148,163,184,.25);
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.skill-fill{
+    height:100%;
+    width:0%;
+    background:linear-gradient(90deg,var(--accent),#0284c7);
+    border-radius:10px;
+    transition:width 1.2s ease;
+}
+
+.skills-note{
+    text-align:center;
+    color:var(--text-soft);
+    font-size:13px;
+    margin-top:25px;
+    opacity:.7;
+}
+
+/* ===========================
+   PROJECT DETAILS BUTTON
+=========================== */
+
+.btn-details{
+    display:block;
+    width:calc(100% - 40px);
+    margin:0 20px 20px;
+    text-align:center;
+    border:none;
+    cursor:pointer;
+    font-size:15px;
+}
+
+/* ===========================
+   PROJECT MODAL
+=========================== */
+
+.modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:2000;
+    padding:20px;
+}
+
+.modal-overlay.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.modal-box{
+    max-width:550px;
+    width:100%;
+    padding:40px;
+    border-radius:20px;
+    position:relative;
+    transform:translateY(30px);
+    transition:.35s;
+    box-shadow:0 20px 50px rgba(0,0,0,.4);
+}
+
+.modal-overlay.active .modal-box{
+    transform:translateY(0);
+}
+
+.modal-close{
+    position:absolute;
+    top:15px;
+    right:20px;
+    background:none;
+    border:none;
+    color:var(--text);
+    font-size:28px;
+    cursor:pointer;
+    line-height:1;
+}
+
+.modal-box h3{
+    color:var(--accent);
+    font-size:26px;
+    margin-bottom:15px;
+    padding-right:20px;
+}
+
+.modal-box p{
+    color:var(--text-soft);
+    line-height:1.8;
+    margin-bottom:15px;
+}
+
+.modal-tech span{
+    color:var(--accent);
+}
+
+.modal-links{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.modal-links .btn,
+.modal-links .btn2{
+    margin-right:0;
+    padding:12px 25px;
+    font-size:14px;
+}
+
+/* ===========================
+   FORM VALIDATION
+=========================== */
+
+.error-msg{
+    display:block;
+    color:#f87171;
+    font-size:13px;
+    margin-top:-14px;
+    margin-bottom:16px;
+    min-height:16px;
+}
+
+form input.invalid,
+form textarea.invalid{
+    border:2px solid #f87171;
+}
+
+/* ===========================
+   TOAST NOTIFICATION
+=========================== */
+
+.toast{
+    position:fixed;
+    bottom:30px;
+    left:50%;
+    transform:translateX(-50%) translateY(100px);
+    background:var(--accent);
+    color:#fff;
+    padding:16px 30px;
+    border-radius:10px;
+    font-weight:600;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+    opacity:0;
+    transition:.4s;
+    z-index:3000;
+    max-width:90%;
+    text-align:center;
+}
+
+.toast.show{
+    opacity:1;
+    transform:translateX(-50%) translateY(0);
+}
+
+/* ===========================
+   FADE-IN READY (used with IntersectionObserver)
+=========================== */
+
+.fade-in-ready{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .7s ease;
+}
+
+.fade-in-ready.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ===========================
+   RESPONSIVE NAV (HAMBURGER)
+=========================== */
+
+@media(max-width:900px){
+
+    .hamburger{
+        display:flex;
+    }
+
+    .nav-links{
+        position:fixed;
+        top:80px;
+        right:-100%;
+        flex-direction:column;
+        background:var(--bg-alt);
+        width:240px;
+        padding:30px;
+        gap:25px;
+        border-radius:0 0 0 15px;
+        box-shadow:-10px 10px 30px rgba(0,0,0,.3);
+        transition:.4s;
+    }
+
+    .nav-links.active{
+        right:0;
+    }
+
+    .navbar{
+        padding:20px 6%;
+    }
+
+}
+
+/* ===========================
+   END OF CSS
+=========================== */
